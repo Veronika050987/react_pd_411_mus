@@ -1,16 +1,14 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  display: flex;
+  flex-direction: column; /* Элементы располагаются вертикально */
+  min-height: 100vh;      /* Гарантируем, что App занимает минимум всю высоту окна */
+  color: #4B0082;
 }
 
 .App-header {
@@ -21,18 +19,14 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #F0F8FF;
 }
 
-.App-link {
-  color: #61dafb;
+.music-list{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+main { 
+  flex-grow: 1; /* main будет занимать всё доступное свободное пространство */
 }
