@@ -30,3 +30,9 @@ html, body {
 main { 
   flex-grow: 1; /* main будет занимать всё доступное свободное пространство */
 }
+input:focus
+{
+    outline: none;
+    border-bottom: 1px solid #B0E0E6;
+    background-color:#E0FFFF;
+}
